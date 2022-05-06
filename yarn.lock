@@ -1247,9 +1247,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sign-on-switch@workspace:.":
+"sign-switch@workspace:.":
   version: 0.0.0-use.local
-  resolution: "sign-on-switch@workspace:."
+  resolution: "sign-switch@workspace:."
   dependencies:
     cypress: ^9.6.0
   languageName: unknown

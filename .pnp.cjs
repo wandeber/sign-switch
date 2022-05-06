@@ -17,14 +17,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],\
     "dependencyTreeRoots": [\
       {\
-        "name": "sign-on-switch",\
+        "name": "sign-switch",\
         "reference": "workspace:."\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["sign-on-switch", ["workspace:."]]\
+      ["sign-switch", ["workspace:."]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -1521,11 +1521,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["sign-on-switch", [\
+      ["sign-switch", [\
         ["workspace:.", {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["sign-on-switch", "workspace:."],\
+            ["sign-switch", "workspace:."],\
             ["cypress", "npm:9.6.0"]\
           ],\
           "linkType": "SOFT"\

@@ -5,7 +5,7 @@ const PASSWORD = Cypress.env('PASSWORD');
 const BASE_URL = Cypress.env('BASE_URL');
 
 const signInText = 'Ingrese su PIN para registrar su entrada';
-const signOutText = 'Ingrese su PIN para registrar su entrada';
+const signOutText = 'Ingrese su PIN para registrar su salida';
 
 
 
@@ -43,5 +43,5 @@ export const signSwitch = (signIn = true) => {
     (character) => cy.get(`.o_hr_attendance_pin_pad_button_${character}`).click()
   );
 
-  //cy.get('.o_hr_attendance_pin_pad_button_ok').click();
+  cy.get('.o_hr_attendance_pin_pad_button_ok').click();
 };
