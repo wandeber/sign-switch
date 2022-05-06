@@ -1,0 +1,12 @@
+{
+  "name": "sign-switch",
+  "packageManager": "yarn@3.2.0",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run:sign-in": "cypress run --spec ./cypress/integration/sign-in.js",
+    "cypress:run:sign-out": "cypress run --spec ./cypress/integration/sign-out.js"
+  },
+  "devDependencies": {
+    "cypress": "^9.6.0"
+  }
+}
