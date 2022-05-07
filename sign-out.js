@@ -24,3 +24,6 @@ if (!data.lastSignOut || (days = currentDate.diff(data.lastSignOut, ['seconds'])
   }
   console.log('Finish');
 }
+else {
+  console.log('Already done today.');
+}

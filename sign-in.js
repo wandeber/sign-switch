@@ -13,7 +13,7 @@ catch (e) {
 
 let currentDate = DateTime.now();
 let days;
-if (!data.lastSignIn || (days = currentDate.diff(data.lastSignIn, ['seconds']).seconds) > 0) {
+if (!data.lastSignIn || (days = currentDate.diff(data.lastSignIn, ['days']).days) > 0) {
   try {
     execSync('yarn run cypress:run:sign-in');
     data.lastSignIn = DateTime.now().toISO();
@@ -23,4 +23,7 @@ if (!data.lastSignIn || (days = currentDate.diff(data.lastSignIn, ['seconds']).s
     console.log('Error during sign in, check the video in ./videos/sign-in.js.mp4');
   }
   console.log('Finish');
+}
+else {
+  console.log('Already done today.');
 }
