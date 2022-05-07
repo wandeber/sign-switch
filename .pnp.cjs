@@ -33,7 +33,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["cypress", "npm:9.6.0"]\
+            ["cypress", "npm:9.6.0"],\
+            ["luxon", "npm:2.3.2"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -1202,6 +1203,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["luxon", [\
+        ["npm:2.3.2", {\
+          "packageLocation": "./.yarn/cache/luxon-npm-2.3.2-a6b71034e1-ba4f9daa56.zip/node_modules/luxon/",\
+          "packageDependencies": [\
+            ["luxon", "npm:2.3.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["merge-stream", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/merge-stream-npm-2.0.0-2ac83efea5-6fa4dcc8d8.zip/node_modules/merge-stream/",\
@@ -1526,7 +1536,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["sign-switch", "workspace:."],\
-            ["cypress", "npm:9.6.0"]\
+            ["cypress", "npm:9.6.0"],\
+            ["luxon", "npm:2.3.2"]\
           ],\
           "linkType": "SOFT"\
         }]\

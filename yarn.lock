@@ -977,6 +977,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"luxon@npm:^2.3.2":
+  version: 2.3.2
+  resolution: "luxon@npm:2.3.2"
+  checksum: ba4f9daa56d03771c2ddf00e3bf996ec7937badfdc2f85f5b58d63c75bb511369b3316f54ab9ce5ab42bfc9118513971f6599128529b68620b876a4b7c16570b
+  languageName: node
+  linkType: hard
+
 "merge-stream@npm:^2.0.0":
   version: 2.0.0
   resolution: "merge-stream@npm:2.0.0"
@@ -1252,6 +1259,7 @@ __metadata:
   resolution: "sign-switch@workspace:."
   dependencies:
     cypress: ^9.6.0
+    luxon: ^2.3.2
   languageName: unknown
   linkType: soft
 
