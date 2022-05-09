@@ -42,3 +42,7 @@ build/Release
 node_modules
 cypress/videos
 cypress/screenshots
+
+
+# Other:
+**/*.DS_Store

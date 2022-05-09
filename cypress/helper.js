@@ -1,8 +1,9 @@
-const PIN = Cypress.env('PIN');
+const BASE_URL = Cypress.env('BASE_URL');
 const DB = Cypress.env('DB');
 const EMAIL = Cypress.env('EMAIL');
 const PASSWORD = Cypress.env('PASSWORD');
-const BASE_URL = Cypress.env('BASE_URL');
+const EMPLOYEE_NAME = Cypress.env('EMPLOYEE_NAME');
+const PIN = Cypress.env('PIN');
 
 const signInText = 'Ingrese su PIN para registrar su entrada';
 const signOutText = 'Ingrese su PIN para registrar su salida';
@@ -33,7 +34,10 @@ export const signSwitch = (signIn = true) => {
   cy.visit('/web#menu_id=195&action=277');
   cy.get('.o_hr_attendance_kiosk_mode button.o_hr_attendance_button_employees').click();
   cy.url().should('contains', '/web#view_type=kanban&model=hr.employee&action=281');
-  cy.get('.o_hr_employee_attendance_kanban .o_kanban_record .oe_kanban_details > div > strong > span').contains('Bernardo').click();
+  cy.get(
+    '.o_hr_employee_attendance_kanban .o_kanban_record .oe_kanban_details > div > strong > span'
+  )
+  .contains(EMPLOYEE_NAME).click();
   
   // Type code:
   const h2Text = signIn ? signInText : signOutText;
