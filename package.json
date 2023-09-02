@@ -1,6 +1,5 @@
 {
   "name": "sign-switch",
-  "packageManager": "yarn@3.2.0",
   "scripts": {
     "sign-in": "node sign-in.js",
     "sign-out": "node sign-out.js",
