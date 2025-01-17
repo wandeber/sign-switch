@@ -1,0 +1,23 @@
+{
+  "name": "sign",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sign-in": "node --env-file=.env sign-switch.js --sign-in",
+    "sign-out": "node --env-file=.env sign-switch.js --sign-out",
+    "sign-switch": "node --env-file=.env sign-switch.js"
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "playwright": "^1.49.1",
+    "playwright-chromium": "^1.49.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.7"
+  }
+}
